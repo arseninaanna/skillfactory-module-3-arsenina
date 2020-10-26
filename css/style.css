@@ -386,6 +386,7 @@ footer p {
 	display: flex;
 	flex-direction: column;
 	font-size: 16px;
+	width: 60%;
 	margin-right: 100px;
 }
 
@@ -412,7 +413,6 @@ footer p {
 	background-color: #e5e5e5;
 	max-width: 734px;
 	height: 252px;
-	width: 100%;
 	margin-bottom: 63px;
 	border: none;
 	resize: none;
@@ -421,7 +421,7 @@ footer p {
 
 .contact-info {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
 	padding-bottom: 40px; 
 	margin-top: 30px;
 }
@@ -429,6 +429,7 @@ footer p {
 .contact-info-text {
 	background-color: #313030;
 	color: #fff;
+	width: 30%;
 	padding-left: 81px;
 }
 
@@ -440,7 +441,6 @@ footer p {
 
 .contact-form button {
 	max-width: 731px;
-	width: 100%;
 	height: 75px;
 	border: none;
 	text-transform: uppercase;
@@ -473,6 +473,27 @@ footer p {
 
 	.email-input {
 		width: 70%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	
+	.products-list li {
+		width: 100%;
+	}
+
+	.contact-info {
+		flex-wrap: wrap;
+		padding-bottom: 0;
+	}
+
+	.contact-form {
+		width: 100%;
+		padding-bottom: 40px;
+	}
+
+	.contact-info-text {
+		width: 100%;
 	}
 }
 
