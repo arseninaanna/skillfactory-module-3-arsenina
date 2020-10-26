@@ -131,9 +131,9 @@ main {
 footer {
 	background-color: #313030;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 170px;
 }
 
 
@@ -286,7 +286,6 @@ footer p {
 
 .team-imgs {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-top: 61px;
 	flex-shrink: 1;
@@ -300,6 +299,12 @@ footer p {
 .team-img-main {
 	width: 324px;
 	height: 460px;
+	margin-right: 65px;
+}
+
+.team-imgs-additional {
+	display: flex;
+	flex-direction: column;
 }
 
 .social-list {
@@ -474,6 +479,10 @@ footer p {
 	.email-input {
 		width: 70%;
 	}
+
+	.team-imgs {
+		flex-wrap: wrap;
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -490,10 +499,15 @@ footer p {
 	.contact-form {
 		width: 100%;
 		padding-bottom: 40px;
+		margin-right: 0;
 	}
 
 	.contact-info-text {
 		width: 100%;
+	}
+
+	.contact-form input{
+		width: 45%;
 	}
 }
 
